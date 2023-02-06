@@ -1,0 +1,87 @@
+<!doctype html>
+  <html>
+    <head>
+	  <title>object</title>
+	  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	</head>
+  <body>
+  <script>
+        //1.
+        document.write("1.using many array in one array changed in map method");
+        document.write("<br>");
+        document.write("<br>");
+
+        const users = [
+            {
+                first_name: 'Mike',
+                last_name: 'Sheridan'
+            },
+            {
+                first_name: 'Tim',
+                last_name: 'Lee'
+            },
+            {
+                first_name: 'John',
+                last_name: 'Carte'
+            }
+        ];
+		let firstQ = users.map(function(first){
+		   return `'${first.first_name} ${first.last_name}'`
+		   });
+		   document.write(firstQ);
+		   
+		   //2.
+		   document.write("<br>");
+		   document.write("<br>");
+        document.write("2.using many array in one array changed in map method");
+        document.write("<br>");
+		document.write("<br>");
+
+        const user2 = [
+            {
+                first_name: 'Mike',
+                last_name: 'Sheridan'
+            },
+            {
+                first_name: 'Tim',
+                last_name: 'Lee'
+            },
+            {
+                first_name: 'John',
+                last_name: 'Carte'
+            }
+        ];
+		let secondQ = user2.map(function(second){
+		   return `"${second.last_name}"`
+		   });
+		   document.write(secondQ);
+		   
+		   //3.
+		    document.write("<br>");
+        document.write("<br>");
+
+        document.write("3.using many array in one array changed in map method");
+        document.write("<br>");
+        document.write("<br>");
+
+        const user3 = [
+            {
+                first_name: 'Mike',
+                location:'London'
+            },
+            {
+                first_name: 'Tim',
+                location:'US'
+            },
+            {
+                first_name: 'John',
+                location:'Australia'
+            }
+        ];
+		let thirdQ = user3.map(function(third){
+		     return`"${third.first_name} lives in ${third.location}"`
+		});
+		document.write(thirdQ);
+		</script>
+</body>
+</html>
